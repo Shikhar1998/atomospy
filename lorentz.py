@@ -12,7 +12,7 @@ def gamma(v):
     """
     return S(1)/Pow(1 - v**2/c**2, S(1)/2)
 
-def lorentz_transform(N, L, v, evaluate=True, precision=2):
+def lorentz_transform(N, L, v, evaluate=True, precision=5):
     """
     Reference: https://en.wikipedia.org/wiki/Lorentz_transformation
 
@@ -43,8 +43,7 @@ def lorentz_transform(N, L, v, evaluate=True, precision=2):
     for i in range(3):
             L_[i] = Mul(g[i], L[i] - v_val[i] * L[3]) 
             L_[3] = Add(L_[3], Mul(g[i], L[3] - v_val[i] * L[i]/ c**2))
-
     if evaluate is True:
-        for j in range(3):
+        for j in range(4):
             L_[j] = L_[j].evalf(precision)
     return L_
