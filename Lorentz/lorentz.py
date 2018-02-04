@@ -1,6 +1,7 @@
 """
 Implementation of lorentz transformation
 """
+
 from sympy import S, Pow, Mul, Add, evalf
 from constants import c
 from sympy.physics.vector import *
@@ -8,8 +9,9 @@ from sympy.physics.vector import *
 def gamma(v):
     """
     This is the rescaling factor for a particle
-    in motion along the x-direction
+    in motion along the x, y or z direction.
     """
+
     return S(1)/Pow(1 - v**2/c**2, S(1)/2)
 
 def lorentz_transform(N, L, v, evaluate=True, precision=5):
@@ -22,6 +24,9 @@ def lorentz_transform(N, L, v, evaluate=True, precision=5):
     L: space time array (x, y, z, t) in frame F
     v: vector, velocity of frame F* with respect to F 
     L_: space time array (x*, y*, z*, t*) in frame F*
+
+    Examples
+    ========
 
     from atomospy.py import lorentz_transform
     from sympy.physics.vector import *

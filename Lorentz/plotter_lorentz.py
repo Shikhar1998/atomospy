@@ -1,4 +1,5 @@
 "Plotting Lorentz transformation results"
+
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 from sympy.utilities.decorator import doctest_depends_on
@@ -9,7 +10,10 @@ def plot_lorentz(L, L_, style = 'ro'):
     """
     For plotting the four dimensional plots the
     fourth dimension in a three dimension
+
+    Default style = 'ro'
     """
+
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     if S.ComplexInfinity in L or S.ComplexInfinity in L_:
