@@ -3,7 +3,7 @@ Implementation of lorentz transformation
 """
 
 from sympy import S, Pow, Mul, Add, evalf
-from constants import c
+from atomospy import c
 from sympy.physics.vector import *
 
 def gamma(v):
