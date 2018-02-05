@@ -6,6 +6,6 @@ install:
   - pip install sympy;
   - pip install matplotlib;
 script: 
-  - pytest -m python -v Lorentz/tests/test_lorentz.py;
+  - pytest
 notifications:
   email: false;
