@@ -1,1 +1,22 @@
 List your objectives here:
+
+Short Term:
+1. Simulate Special Relativity:
+	1. Lorentz Transformation
+	2. Einstein Energy mass equivalence
+
+2. General Theory of Relativity:
+	1. Implement the '10 in 1' mathematical equation of
+	relativity.
+	2. Create a model for gravitational waves(Earth sun - simulation(but with maths)).
+
+Long term:
+1. Create a model for strings:
+	1. Why I did relativity first?(I know you will ask)
+	Reason (Baby steps): If we implement something in 4 dimensions
+	we will have a firm ground and idea for dealing with 10 dimensions.
+	Moreover, we will have a dual purpose library, and I am
+	sure no other library offers the support for relativity.
+2. Create the basis for 10 dimensions.
+3. Create a mathematic model for the sub-atomic particles.
+4. Create a 10-d to 3-d model of the strings.
