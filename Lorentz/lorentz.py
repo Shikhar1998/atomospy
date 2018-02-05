@@ -3,7 +3,7 @@ Implementation of lorentz transformation
 """
 
 from sympy import S, Pow, Mul, Add, evalf
-from constants import c
+from atomospy import c
 from sympy.physics.vector import *
 
 def gamma(v):
@@ -19,6 +19,7 @@ def lorentz_transform(N, L, v, evaluate=True, precision=5):
     Reference: https://en.wikipedia.org/wiki/Lorentz_transformation
 
     Paramters:
+    =========
 
     N: Input Reference Frame
     L: space time array (x, y, z, t) in frame F
