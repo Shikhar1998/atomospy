@@ -82,6 +82,3 @@ def lorentz_transform(L, v, theta, evaluate=True, precision=5):
     if evaluate is True:
         L_ = L_.evalf(precision)
     return L_
-L = [1, 2]
-v = c/2
-print lorentz_1d(L, v, evaluate=True, precesion=25)

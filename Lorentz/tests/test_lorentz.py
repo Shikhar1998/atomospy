@@ -1,6 +1,5 @@
 from atomospy import c, gamma, lorentz_transform, lorentz_1d
 from sympy import S, zoo, nan, Matrix
-from sympy.physics.vector import *
 
 def test_gamma():
     assert gamma(0) == S(1)
